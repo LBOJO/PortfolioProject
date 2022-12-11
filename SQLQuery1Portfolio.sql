@@ -32,8 +32,6 @@ select continent,Population, MAX(total_cases)as HighestInfectionCount, Max(total
 
  -- showing Countries with Highest Death Count Per Population
  
-  
-
 
  Select continent, Max(cast(Total_deaths as int)) as TotalDeathCount
  From PortofolioProject..CovidDeaths
@@ -73,8 +71,6 @@ On dea.location = vac.location
 and dea.date = vac.date
 
 --Looking at Total Population vs Vaccinations
-
-
 
 
 select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, 
